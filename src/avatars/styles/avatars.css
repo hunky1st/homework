@@ -1,1 +1,52 @@
-/* 여기에 스타일을 구현해 주세요 */
+.userpool {
+  width: 556px;
+  height: 355px;
+  padding: 100px;
+  background-color: #ffffff;
+  /* 그리드설정은 노션에 보이는 슬비쌤의 강의자료의 순서상 - 추측컨대 - 근시일내 예정돼 있는만큼, ai와, 저희 조 조장님 서영님께서 보내주신 자료를 참고해 설정해 보았습니다. */
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.user {
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+
+.pfimage {
+  border-radius: 50%;
+  /* 라디우스 설정은 수업내 과정에 있었으나 언급되지 않은 부분으로 강의자료와 설정값은 ai를 참고하였습니다.*/
+  width: 64px;
+  height: 64px;
+}
+
+.statusOffline {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  position: absolute;
+  /* position속성은 저희 조 조장님 서영님의 도움이 컸습니다. 블로그 자료를 보내주셨는데 너무 도움이 됐습니다.*/
+  bottom: 0%;
+  right: 0%;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.statusOnline {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #4cfe88;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
