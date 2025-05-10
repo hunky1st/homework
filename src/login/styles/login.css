@@ -79,7 +79,7 @@ input:focus {
 .custom-checkbox-label {
   display: inline-flex;
   align-items: center;
-  margin-right: 0.3125rem;
+  gap: 0.3125rem;
   cursor: pointer;
 }
 
