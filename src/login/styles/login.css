@@ -1,1 +1,126 @@
-/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+:root {
+  --base-font-size: 1rem;
+  --basic-font-color: #121212;
+  --input-form-font-size: 0.875rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.naver-logo {
+  width: 230px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.125rem;
+}
+
+.login-id-password-box {
+  width: 90%;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  min-width: 290px;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.25rem 0rem 0.25rem 0rem;
+  padding: 0rem 1.25rem 0rem 1.25rem;
+  height: 45px;
+  font-size: var(--input-form-font-size);
+  border: 1px solid #dadada;
+  background-color: #fff;
+  color: #dadada;
+}
+
+input:focus {
+  border-color: #03cf5d;
+  background-color: #e9f0fd;
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  margin-top: 1.25rem;
+  color: #fff;
+  font-size: var(--base-font-size);
+  background-color: #03cf5d;
+}
+
+.login-ip-wrapper {
+  font-size: var(--base-font-size);
+  color: var(--basic-font-color);
+  display: flex;
+  align-items: center;
+  margin-top: 0.625rem;
+  justify-content: flex-end;
+}
+
+.login-maintain-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.3125rem;
+  cursor: pointer;
+}
+
+.checkbox-svg:checked {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.real-checkbox:checked + .custom-checkbox-label .unchecked-svg {
+  display: none;
+}
+.real-checkbox:checked + .custom-checkbox-label .checked-svg {
+  display: inline-block;
+}
+
+.real-checkbox:not(:checked) + .custom-checkbox-label .unchecked-svg {
+  display: inline-block;
+}
+.real-checkbox:not(:checked) + .custom-checkbox-label .checked-svg {
+  display: none;
+}
+
+.ip-security-link {
+  display: none;
+  text-decoration: none;
+  color: var(--basic-font-color);
+}
+
+@media (min-width: 768px) {
+  .login-id-password-box {
+    width: 500px;
+    box-sizing: border-box;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .login-ip-wrapper {
+    justify-content: space-between;
+  }
+
+  .ip-security-link {
+    display: inline;
+  }
+}
