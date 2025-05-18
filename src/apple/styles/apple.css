@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'applefont';
-  src: url('/src/assets/fonts/SF-Pro.ttf') format('woff2');
+  src: url('./src/assets/fonts/SF-Pro.ttf') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,24 +19,24 @@ figure {
 }
 
 figure.ipad-pro {
-  background-image: url(/src/apple/products/ipad_pro.jpeg);
+  background-image: url('./src/apple/products/ipad_pro.jpeg');
   background-size: cover;
   background-position: center;
 }
 
 figure.ipad-air {
-  background-image: url('/src/apple/products/ipad_air.jpeg');
+  background-image: url('./src/apple/products/ipad_air.jpeg');
   background-size: cover;
   background-position: center;
 }
 figure.iphone-15 {
-  background-image: url(/src/apple/products/iphone15.jpeg);
+  background-image: url('./src/apple/products/iphone15.jpeg');
   background-size: cover;
   background-position: center;
 }
 
 figure.watch {
-  background-image: url('/src/apple/products/apple_watch.jpeg');
+  background-image: url('./src/apple/products/apple_watch.jpeg');
   background-size: cover;
   background-position: center;
 }
@@ -146,24 +146,24 @@ a {
   }
 
   figure.ipad-pro {
-    background-image: url('/src/apple/products/ipad_pro_wide_2x.jpeg');
+    background-image: url('./src/apple/products/ipad_pro_wide_2x.jpeg');
     background-size: cover;
     background-position: center;
   }
 
   figure.ipad-air {
-    background-image: url('/src/apple/products/ipad_air_wide_2x.jpeg');
+    background-image: url('./src/apple/products/ipad_air_wide_2x.jpeg');
     background-size: cover;
     background-position: center;
   }
   figure.iphone-15 {
-    background-image: url(/src/apple/products/iphone15_2x.jpeg);
+    background-image: url('./src/apple/products/iphone15_2x.jpeg');
     background-size: cover;
     background-position: center;
   }
 
   figure.watch {
-    background-image: url('/src/apple/products/apple_watch_2x.jpeg');
+    background-image: url('./src/apple/products/apple_watch_2x.jpeg');
     background-size: cover;
     background-position: center;
   }
